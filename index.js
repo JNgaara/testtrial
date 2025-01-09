@@ -11,12 +11,31 @@ function showAlert(message, className){
 }
 const LookupPress= document.addEventListener('LookupWeather');
 
-LookupPress
+
 function getWeather(){
     const apiKey = '';
     const city = document.getElementById('City').value;
     
     const currentWeatherUrl = ' ';
+    const forecastURL = ' ';
+
+    fetch(currentWeatherUrl)
+    .then(response => response.json())
+    .then(data => {
+        displayWeather(data);
+    })
+    .catch(error =>{
+        console.error('Error fetching current weather data: ', error);
+    });
+
+    fetch(forecastURL)
+    .then(response = response.json())
+    .then(data => {
+        displayHourlyForecast(data.list);
+    })
+    .catch(console.error('Error fetching hourly forecast'));
+
+
 }
 
 fetchSeasonData();

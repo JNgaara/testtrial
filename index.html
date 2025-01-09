@@ -9,7 +9,7 @@
 </head>
 <body style="color: white; background-color: peru;">
     
-    <div class="container mt-5">
+    <div class="container " id="weather-container">
         <div class="text-center">
             <h1 class="display-5 mb-5"><strong>POCKET WEATHER </strong></h1>
         </div>
@@ -17,10 +17,9 @@
 
             <form action="" id="formF1" class="row justify-content-center mb-4" autocomplete="off">
                 
-                <div class="col-8 md-8 mb-3">
                     <label for="City"> City</label>
                     <input class = "form-control" id="City" type="text" placeholder="Enter a city">
-                </div>
+             
                       <!-- <input name="" id="findWeather" class="btn btn-primary" type="button" value="Find the city's Weather"> -->
                       <br>  
                 </div>
@@ -28,9 +27,12 @@
                     <button id="LookupWeather"  onclick=" getWeather()" type="submit" class="btn btn-primary btn-1">Lookup Weather</button>
                 
             </form>
+            
+            <!-- <button id="LookupWeather"  onclick=" getWeather()" type="submit" class="btn btn-primary btn-1">Lookup Weather</button> -->
+
             <div id="temp-div">   </div>
 
-            <div id="weather-infi">   </div>
+            <div id="weather-info">   </div>
             
             <div id="hourly-forecast">   </div>
             
