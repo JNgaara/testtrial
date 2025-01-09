@@ -10,6 +10,10 @@ function showAlert(message, className){
     const container = document.querySelector(".container");
 }
 
+function getWeather(){
+    
+}
+
 fetchSeasonData();
 async function fetchSeasonData() {
     const Season = document.getElementById("Season").value;
@@ -24,3 +28,4 @@ async function fetchSeasonData() {
     const data = await responseSeason.json();
     console.log(data);
 }
+
