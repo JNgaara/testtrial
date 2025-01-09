@@ -10,10 +10,15 @@ function showAlert(message, className){
     const container = document.querySelector(".container");
 }
 
-async function fetchData() {
+async function fetchSeasonData() {
     const Season = document.getElementById("Season").value;
     const Team = document.getElementById("Team").value;
     const Driver = document.getElementById("Driver").value;
+    const responseSeason = await fetch(`http://api.jolpi.ca/ergast/f1/${Season}`)
 
-    
+    if(!responseSeason.ok){
+        throw new Error("Could not fetch resource");
+    }
+
+    const data = await responseSeason.json();
 }
