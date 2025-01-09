@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>JN Pocket Weather App</title>
 </head>
 <body style="color: white; background-color: peru;">
@@ -20,11 +21,11 @@
                     <label for="City"> City</label>
                     <input class = "form-control" id="City" type="text" placeholder="Enter a city">
                 </div>
-                      <input name="" id="findWeather" class="btn btn-primary" type="button" value="Find the city's Weather">
+                      <!-- <input name="" id="findWeather" class="btn btn-primary" type="button" value="Find the city's Weather"> -->
                       <br>  
                 </div>
                     <!-- <input class="btn btn-success add-btn " type="submit" value="Submit"> -->
-                    <button onclick=" getWeather()" type="submit" class="btn btn-primary">Lookup Weather</button>
+                    <button id="LookupWeather"  onclick=" getWeather()" type="submit" class="btn btn-primary btn-1">Lookup Weather</button>
                 
             </form>
             <div id="temp-div">   </div>

@@ -9,9 +9,14 @@ function showAlert(message, className){
     div.appendChild(document.createTextNode(message));
     const container = document.querySelector(".container");
 }
+const LookupPress= document.addEventListener('LookupWeather');
 
+LookupPress
 function getWeather(){
+    const apiKey = '';
+    const city = document.getElementById('City').value;
     
+    const currentWeatherUrl = ' ';
 }
 
 fetchSeasonData();

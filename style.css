@@ -1,0 +1,12 @@
+.container .box #findWeather button:hover{
+    background: orange;
+}
+
+.btn {
+border-radius: 0;
+margin-right: 20px;
+}
+
+.btn-primary:hover{
+background-color: rgb(232, 17, 64);
+}
