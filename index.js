@@ -8,7 +8,12 @@ function showAlert(message, className){
 
     div.appendChild(document.createTextNode(message));
     const container = document.querySelector(".container");
+}
+
+async function fetchData() {
+    const Season = document.getElementById("Season").value;
+    const Team = document.getElementById("Team").value;
+    const Driver = document.getElementById("Driver").value;
+
     
-
-
 }
