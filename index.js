@@ -1,4 +1,5 @@
 var selectedRow = null;
+const baseURL = "http://api.jolpi.ca/ergast/f1/"
 
 //show user alertrs
 function showAlert(message, className){
