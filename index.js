@@ -10,10 +10,11 @@ function showAlert(message, className){
     const container = document.querySelector(".container");
 }
 
+fetchSeasonData();
 async function fetchSeasonData() {
     const Season = document.getElementById("Season").value;
-    const Team = document.getElementById("Team").value;
-    const Driver = document.getElementById("Driver").value;
+    // const Team = document.getElementById("Team").value;
+    // const Driver = document.getElementById("Driver").value;
     const responseSeason = await fetch(`http://api.jolpi.ca/ergast/f1/${Season}`)
 
     if(!responseSeason.ok){
@@ -21,4 +22,5 @@ async function fetchSeasonData() {
     }
 
     const data = await responseSeason.json();
+    console.log(data);
 }
